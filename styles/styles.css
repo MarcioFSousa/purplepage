@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background: hsl(220, 3%, 19%);
+
+  --nav-height: 7.2rem;
+}
+
+html {
+}
+
+body {
+  background-color: var(--background);
+
+  align-items: center;
+
+  text-align: center;
+  font-family: poppins;
+  color: white;
+
+  overflow: overlay;
+
+  padding: 1rem;
+
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  margin: 1rem;
+
+  font-size: 1.3rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 0 5rem;
+}
+
+nav button {
+  background-color: hsl(220, 3%, 19%);
+
+  color: white;
+
+  padding: 1rem;
+  border: 0.3rem solid blueviolet;
+  border-radius: 5rem;
+
+  font-size: 1.2rem;
+}
+
+nav button:hover {
+  background-color: blueviolet;
+
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+h2:nth-child(1) {
+  color: blueviolet;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+p {
+  margin: 1.5rem 0rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+}
+
+input {
+  padding: 1rem;
+
+  border-radius: 5rem;
+  border: none;
+  margin: 0.5rem;
+}
+
+input:last-child {
+  width: 50%;
+  color: white;
+  background-color: blueviolet;
+}
+
+input:last-child:hover {
+  background-color: white;
+  color: blueviolet;
+  transition: 0.3s;
+}
+
+article {
+  display: flex;
+
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow: auto;
+    padding: 4rem 6rem;
+
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.2rem;
+
+    justify-content: space-between;
+  }
+
+  #title {
+    display: inline;
+
+    text-align: left;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+
+    font-size: 1.2rem;
+  }
+
+  nav button {
+    font-size: 1.2rem;
+
+    padding: 1rem 4rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    height: 80%;
+  }
+
+  aside {
+    flex: 50%;
+    align-self: center;
+
+    width: 50rem;
+
+    margin: 0;
+  }
+
+  article {
+    flex: 50%;
+    align-self: center;
+
+    width: 50rem;
+
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+
+    margin: 0;
+  }
+
+  input {
+    padding: 1.5rem;
+  }
+
+  img {
+    width: 80%;
+
+    margin: 0;
+  }
+}
